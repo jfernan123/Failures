@@ -4,4 +4,6 @@ Goal: Create a little cell in a 10x10 grid that can learn to survive by feeding 
 
 How I did it: I used expected sarsa to learn the value function of the 10x10 grid in an attempt to make the cell learn the overall location of food. I used an epsilon greedy policy
 
-Why I failed: While the cell can survive and find out the general direction of food, it fails to 
+Why I failed: While the cell can survive and find out the general direction of food, it fails to accurately manage to gather enough food to survive a full life span. 
+
+What I learned: Expected Sarsa might not work to well in dynamic stochastic environments where the environment keeps continually changing, for example in this case what kept changing was the location of food. It was defined within a boundary but other than that it's spawn was random. This could be wrong though. 
